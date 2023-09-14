@@ -19,9 +19,11 @@
 ```mermaid
 flowchart LR
 
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
+U(Untracked) -->|git add| S(Staged)
+M(Modified) -->|git add| S
+S -->|изменения| M
+S -->|git commit| T(Tracked)
+T -->|изменения| M
 C -->|Two| E[Result 2]
 ```
 
