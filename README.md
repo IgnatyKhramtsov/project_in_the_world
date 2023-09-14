@@ -14,23 +14,15 @@
 
 Вот вам [ссылка](https://github.com/IgnatyKhramtsov "Я ссылка)") на мой GitHub!
 
-# А теперь добавим *mermaid*-схему
+# А теперь добавим *mermaid*-схему статусов файлов
+
 
 ```mermaid
 graph LR;
-  untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
-
-%% стрелка без текста для примера: 
-  A --> B;
-``` 
-
-```mermaid
-graph LR;
-  untracked -- "git add" --> staged;
-  staged    -- "git commit"     --> tracked/comitted;
-  modified  -- "git add" --> staged;
-  tracked/comitted -- "изменения" --> modified;
+  untracked -- " git add " --> staged;
+  modified  -- " git add " --> staged;
+  staged    -- " git commit "     --> tracked/comitted;
+  tracked/comitted -- " изменения " --> modified;
 ```
 
 ВОТЬ
