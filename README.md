@@ -40,7 +40,7 @@ U -->|git add| S
 M -->|git add| S
 ```
 
-А так работает **git reset --hard <commit hash>**
+А так работает **git reset --hard 'commit hash'**
 
 ```mermaid
 flowchart LR
