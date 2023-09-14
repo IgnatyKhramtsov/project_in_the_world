@@ -20,8 +20,6 @@
 flowchart LR
 
 U(Untracked) -->|git add| S(Staged)
-S -->|git restore --staged <file> or <.>| U
-S -->|git restore --staged <file> or <.>| M
 M(Modified) -->|git add| S
 S -->|изменения| M
 S -->|git commit| T(Tracked)
