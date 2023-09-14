@@ -34,11 +34,10 @@ T -->|изменения| M
 
 ```mermaid
 flowchart LR
-
-U(Untracked) -->|git add| S(Staged)
-M(Modified) -->|git add| S
-S -->|git restore --staged <file> or <.>| U
-S -->|git restore --staged <file> or <.>| M
+S(Staged) -->|git restore --staged <file> or <.>| U(Untracked)
+S -->|git restore --staged <file> or <.>| M(Modified)
+U -->|git add| S
+M -->|git add| S
 ```
 
 А так работает **git reset --hard <commit hash>**
