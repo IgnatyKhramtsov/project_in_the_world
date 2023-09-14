@@ -26,8 +26,6 @@ S -->|git commit| T(Tracked)
 T -->|изменения| M
 ```
 
-ВОТЬ
-
 
 
 
