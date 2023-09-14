@@ -25,13 +25,13 @@ graph LR;
   A --> B;
 ``` 
 
-'''mermaid
+```mermaid
 graph LR;
   untracked -- "git add" --> staged;
   staged    -- "git commit"     --> tracked/comitted;
   modified  -- "git add" --> staged;
   tracked/comitted -- "изменения" --> modified;
-'''
+```
 
 ВОТЬ
 
