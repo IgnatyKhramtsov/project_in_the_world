@@ -14,6 +14,17 @@
 
 Вот вам [ссылка](https://github.com/IgnatyKhramtsov "Я ссылка)") на мой GitHub!
 
+# А теперь добавим *mermaid*-схему
+
+'''mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "git commit"     --> tracked/comitted;
+  modified  -- "git add" --> staged;
+  tracked/comitted -- "изменения" --> modified;
+'''
+
+ВОТЬ
 
 
 
