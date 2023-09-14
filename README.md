@@ -24,18 +24,6 @@ M(Modified) -->|git add| S
 S -->|изменения| M
 S -->|git commit| T(Tracked)
 T -->|изменения| M
-C -->|Two| E[Result 2]
-```
-
-
-
-```mermaid
-graph LR;
-  untracked->>staged: git add
-  modified  -- " git add " --> staged;
-  staged    -- " git commit "     --> tracked/comitted;
-  tracked/comitted -- " изменения " --> modified;
-  staged -- " изменения " --> modified;
 ```
 
 ВОТЬ
