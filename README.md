@@ -20,10 +20,33 @@
 flowchart LR
 
 U(Untracked) -->|git add| S(Staged)
+S -->|git restore --staged <file> or <.>| U
+S -->|git restore --staged <file> or <.>| M
 M(Modified) -->|git add| S
 S -->|изменения| M
 S -->|git commit| T(Tracked)
 T -->|изменения| M
+```
+
+# Как откатиться назад если всё сломалось
+
+Лекго и просто, вам всего лишь нужно ...
+
+```mermaid
+flowchart LR
+
+U(Untracked) -->|git add| S(Staged)
+M(Modified) -->|git add| S
+S -->|git restore --staged <file> or <.>| U
+S -->|git restore --staged <file> or <.>| M
+```
+
+А так работает **git reset --hard <commit hash>**
+
+```mermaid
+flowchart LR
+H(HEAD) --> C1[COM1] --> C2[COM2] --> C3[COM3]
+title
 ```
 
 
